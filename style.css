@@ -1,0 +1,278 @@
+
+/* ===== PENGATURAN DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8fb;
+    color: #674858;
+    line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #f5c9dc;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    color: #a64d79;
+    font-size: 32px;
+}
+
+header p {
+    color: #89516a;
+    margin-bottom: 15px;
+}
+
+/* ===== MENU NAVIGASI ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #974f70;
+    background-color: #fff;
+    padding: 8px 17px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d98caf;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ===== PENGATURAN SECTION ===== */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #b45f83;
+    text-align: center;
+}
+
+.subjudul {
+    text-align: center;
+    color: #a8788d;
+    margin-bottom: 25px;
+}
+
+/* ===== BERANDA ===== */
+.hero {
+    text-align: center;
+}
+
+.foto-keluarga {
+    display: block;
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 auto 22px;
+    border: 5px solid #f2bfd4;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #ead0dc;
+}
+
+.hero h3 {
+    color: #a64d79;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* ===== ANIMASI SEMUA FOTO ===== */
+img {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.06) translateY(-5px);
+    box-shadow: 0 10px 22px #dca9bf;
+}
+
+/* ===== POHON KELUARGA ===== */
+.pohon {
+    background-color: #fff0f5;
+    border-radius: 22px;
+}
+
+.baris {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kartu {
+    width: 180px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #f2c4d6;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px #efd6e0;
+}
+
+.kartu img {
+    width: 125px;
+    height: 170px;
+    object-fit: cover;
+    border: 3px solid #f3bfd4;
+    border-radius: 14px;
+}
+
+.kartu h3 {
+    color: #b45f83;
+    margin-top: 8px;
+}
+
+.kartu p {
+    color: #a8788d;
+}
+
+.kartu span {
+    display: block;
+    margin-top: 6px;
+    padding: 4px;
+    background-color: #fde3ed;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+/* GARIS POHON */
+.garis {
+    width: 3px;
+    height: 35px;
+    margin: 20px auto;
+    background-color: #dfa1ba;
+    border-radius: 5px;
+}
+
+/* ===== PERKENALAN KELUARGA ===== */
+.perkenalan {
+    padding-top: 45px;
+}
+
+.anggota {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin: 22px 0;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #f5d1df;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px #f2dce5;
+}
+
+.anggota img {
+    display: block;
+    width: 180px;
+    height: 250px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 4px solid #f3bfd4;
+    border-radius: 15px;
+}
+
+.anggota h3 {
+    color: #b45f83;
+    margin-bottom: 10px;
+}
+
+.anggota p {
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.jepang {
+    color: #674858;
+}
+
+.romaji {
+    color: #a0647d;
+    font-style: italic;
+}
+
+.arti {
+    padding: 10px;
+    background-color: #fff0f5;
+    border-radius: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 30px;
+    padding: 25px 15px;
+    text-align: center;
+    color: #8e4567;
+    background-color: #f5c9dc;
+}
+
+/* ===== TAMPILAN HP ===== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    .foto-keluarga {
+        width: 230px;
+        height: 330px;
+    }
+
+    .baris {
+        gap: 12px;
+    }
+
+    .kartu {
+        width: 145px;
+        padding: 10px;
+    }
+
+    .kartu img {
+        width: 105px;
+        height: 145px;
+    }
+
+    .anggota {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+    }
+
+    .anggota img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .anggota h3 {
+        margin-top: 5px;
+    }
+}
